@@ -18,9 +18,15 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('一共有', len(new), '筆留言長度小於100')
+print(new[0])
 
 g = []
 for d in data:
 	if 'good' in d:
 		g.append(d)
-print('一共有', len(g), '筆留言有good的字眼')
+print('一共有', len(g), '筆留言有good 的字眼')
+print(g[0])
+
+bad = [d for d in data if 'bad' in d]
+print('一共有', len(bad), '筆留言有bad的字眼')
+print(bad[0])
